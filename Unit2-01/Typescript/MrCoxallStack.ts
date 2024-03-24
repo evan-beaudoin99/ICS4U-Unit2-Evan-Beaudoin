@@ -8,7 +8,7 @@
 
 export class MrCoxallStack {
   // Stack that contains all of the string
-  private stackAsList: string[]
+  private stackAsList
 
   // Creates the stack
   public constructor() {
