@@ -21,11 +21,11 @@ export class MrCoxallStack {
   }
 
   // Returns the stack
-  public showStack() {
-    let stackItems = this.stackAsList[0]
+ public showStack() { 
+    let stackItems = ""
 
-    for (let counter = 1; counter < this.stackAsList.length; counter++) {
-      stackItems = stackItems + ", " + this.stackAsList[counter]
+    for (let counter = 0; counter < this.stackAsList.length; counter++) {
+      stackItems = this.stackAsList[counter] + ","
     }
 
     return stackItems
