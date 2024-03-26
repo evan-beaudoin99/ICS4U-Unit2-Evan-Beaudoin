@@ -30,6 +30,15 @@ public class MrCoxallStack {
     }
 
     /**
+     * The getStackAsList() getter.
+     *
+     * @return -  current list
+     */
+    public List<String> getStackAsList() {
+        return this.stackAsList;
+    }
+
+    /**
      * Pushes the string to a list.
      *
      * @param string the string that is going to be pushed
