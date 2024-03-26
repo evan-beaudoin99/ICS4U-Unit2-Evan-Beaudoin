@@ -3,7 +3,7 @@
 *
 * @author  Evan Beaudoin
 * @version 1.0
-* @since   2024-03-08
+* @since   2024-03-25
 */
 
 /**
@@ -47,14 +47,9 @@ final class Main {
         dogStack.push("beagle");
 
         // Show stack
-        final String fruitStackValues = fruitStack.showStack();
-        System.out.println("Fruit Items: " + fruitStackValues);
-
-        final String colorStackValues = colorStack.showStack();
-        System.out.println("Color items: " + colorStackValues);
-
-        final String dogStackValues = dogStack.showStack();
-        System.out.println("Dog items: " + dogStackValues);
+        System.out.println("Fruit Items: " + fruitStack.showStack());
+        System.out.println("Color items: " + colorStack.showStack());
+        System.out.println("Dog items: " + dogStack.showStack());
 
         // Show the program as done
         System.out.println("\nDone.");

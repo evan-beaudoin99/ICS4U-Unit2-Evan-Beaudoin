@@ -1,10 +1,10 @@
 /**
-* This program uses a class to generate a lock combo
+* This is the main program
 *
 * By:      Evan Beaudoin
 * Version: 1.0
-* Since:   2024-03-07
-*/
+* Since:   2024-03-25
+*/ 
 
 import { MrCoxallStack } from './MrCoxallStack'
 
