@@ -3,13 +3,28 @@
 *
 * @author  Evan Beaudoin
 * @version 1.0
-* @since   2024-03-08
+* @since   2024-03-26
 */
 
 /**
 * This is the program.
 */
 final class Main {
+    /*
+    * Constants
+    */
+    final String FRUIT_ITEM = "Fruit Item: "
+
+    /*
+    * Constants
+    */
+    final String COLOR_ITEM = "Color Item: "
+
+    /*
+    * Constants
+    */
+    final String DOG_ITEM = "Dog Item: "
+    
     /**
     * Prevent instantiation.
     * Throw an exception IllegalStateException.
