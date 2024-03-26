@@ -1,13 +1,12 @@
 /**
-* This program uses a class to generate a lock combo
+* This is the main program
 *
 * By:      Evan Beaudoin
 * Version: 1.0
-* Since:   2024-03-07
-*/
+* Since:   2024-03-25
+*/ 
 
 import { MrCoxallStack } from './MrCoxallStack'
-import { createPrompt } from 'bun-promptx'
 
 // Uses MrCoxallStack
 const fruitStack = new MrCoxallStack()
@@ -26,16 +25,13 @@ dogStack.push("retriever")
 dogStack.push("beagle")
 
 // Shows the fruit stack items
-const fruitStackItems = fruitStack.showStack()
-console.log("Fruit items:", fruitStackItems)
+console.log("Fruit items:", fruitStack.showStack())
 
 // Shows the color stack items
-const colorStackItems = colorStack.showStack()
-console.log("Color items:", colorStackItems)
+console.log("Color items:", colorStack.showStack())
 
 // Shows the dog stack items
-const dogStackItems = dogStack.showStack()
-console.log("Dog items: ", dogStackItems)
+console.log("Dog items: ", dogStack.showStack())
 
 // Show the program as done
 console.log('\nDone.')
