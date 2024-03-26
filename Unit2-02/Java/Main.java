@@ -13,17 +13,17 @@ final class Main {
     /*
     * Constants
     */
-    final String FRUIT_ITEM = "Fruit Item: "
+    final String FRUIT_ITEM = "Fruit Item: ";
 
     /*
     * Constants
     */
-    final String COLOR_ITEM = "Color Item: "
+    final String COLOR_ITEM = "Color Item: ";
 
     /*
     * Constants
     */
-    final String DOG_ITEM = "Dog Item: "
+    final String DOG_ITEM = "Dog Item: ";
     
     /**
     * Prevent instantiation.
