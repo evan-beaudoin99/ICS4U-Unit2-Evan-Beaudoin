@@ -45,6 +45,7 @@ public class MrCoxallStack {
     */
     public String showStack() {
         final StringBuilder stackValues = new StringBuilder();
+        // https://www.javatpoint.com/StringBuilder-class
 
         for (String value : this.stackAsList) {
             stackValues.append(value).append(", ");
