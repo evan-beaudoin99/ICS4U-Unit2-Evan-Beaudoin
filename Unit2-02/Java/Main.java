@@ -10,21 +10,21 @@
 * This is the program.
 */
 final class Main {
-    /*
-    * Constants
+    /**
+    * Constants.
     */
-    final String FRUIT_ITEM = "Fruit Item: ";
+    private static final String FRUIT_ITEM = "Fruit Item: ";
 
-    /*
-    * Constants
+    /**
+    * Constants.
     */
-    final String COLOR_ITEM = "Color Item: ";
+    private static final String COLOR_ITEM = "Color Item: ";
 
-    /*
-    * Constants
+    /**
+    * Constants.
     */
-    final String DOG_ITEM = "Dog Item: ";
-    
+    private static final String DOG_ITEM = "Dog Item: ";
+
     /**
     * Prevent instantiation.
     * Throw an exception IllegalStateException.
@@ -65,11 +65,13 @@ final class Main {
         System.out.println(FRUIT_ITEM + fruitStack.showStack());
         System.out.println(FRUIT_ITEM + fruitStack.popItem());
         System.out.println(FRUIT_ITEM + fruitStack.showStack());
-      
-        System.out.println("\n"+ COLOR_ITEM+ colorStack.showStack());
+
+        System.out.println("");
+        System.out.println(COLOR_ITEM + colorStack.showStack());
         System.out.println(COLOR_ITEM + colorStack.popItem());
         System.out.println(COLOR_ITEM + colorStack.showStack());
 
+        System.out.println("");
         System.out.println("\n" + DOG_ITEM + dogStack.showStack());
         System.out.println(DOG_ITEM + dogStack.popItem());
         System.out.println(DOG_ITEM + dogStack.showStack());

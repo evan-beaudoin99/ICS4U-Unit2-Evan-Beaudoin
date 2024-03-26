@@ -44,28 +44,30 @@ public class MrCoxallStack {
      * @return the values of the list formatted
     */
     public String showStack() {
-      final StringBuilder stackValues = new StringBuilder();
-      // https://www.javatpoint.com/StringBuilder-class
+        final StringBuilder stackValues = new StringBuilder();
+        // https://www.javatpoint.com/StringBuilder-class
 
-      for (String value : this.stackAsList) {
-          stackValues.append(value).append(", ");
-      }
+        for (String value : this.stackAsList) {
+            stackValues.append(value).append(", ");
+        }
 
-      stackValues.deleteCharAt(stackValues.length() - 2);
-    
-      return stackValues.toString();
+        stackValues.deleteCharAt(stackValues.length() - 2);
+
+        return stackValues.toString();
     }
 
     /**
      * Returns the stack value.
      *
      * @return the values of the list formatted
+     *
+     * @throws IllegalStateException if this is ever called
     */
     public String popItem() {
-      if (stackAsList.isEmpty()) {
-          throw new IllegalStateException("Stack is empty.");
-      }
+        if (stackAsList.isEmpty()) {
+            throw new IllegalStateException("Stack is empty.");
+        }
 
-      return stackAsList.remove(stackAsList.size() - 1);
+        return stackAsList.remove(stackAsList.size() - 1);
     }
 }
