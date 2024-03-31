@@ -6,7 +6,6 @@
 * @since   2024-03-25
 */
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,27 +20,9 @@ public class MrCoxallStack {
     private List<String> stackAsList;
 
     /**
-     * Constructs a new instance of MrCoxallStack.
-     * Initializes the stack with an empty ArrayList.
-     *
-    */
-    public MrCoxallStack() {
-        this.stackAsList = new ArrayList<>();
-    }
-
-    /**
-     * Pushes the string to a list.
-     *
-     * @param string the string that is going to be pushed
-    */
-    public void push(String string) {
-        this.stackAsList.add(string);
-    }
-
-    /**
-     * Returns the stack value.
-     *
-     * @return the values of the list formatted
+    * Returns the stack value.
+    *
+    * @return the values of the list formatted
     */
     public String showStack() {
         final StringBuilder stackValues = new StringBuilder();
@@ -54,6 +35,15 @@ public class MrCoxallStack {
         stackValues.deleteCharAt(stackValues.length() - 2);
 
         return stackValues.toString();
+    }
+
+    /**
+     * Pushes the string to a list.
+     *
+     * @param string the string that is going to be pushed
+    */
+    public void push(String string) {
+        this.stackAsList.add(string);
     }
 
     /**
