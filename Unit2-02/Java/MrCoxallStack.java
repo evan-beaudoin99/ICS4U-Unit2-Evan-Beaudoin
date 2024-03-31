@@ -20,42 +20,9 @@ public class MrCoxallStack {
     private List<String> stackAsList;
 
     /**
-<<<<<<< HEAD
     * Returns the stack value.
     *
     * @return the values of the list formatted
-=======
-     * Constructs a new instance of MrCoxallStack.
-     * Initializes the stack with an empty ArrayList.
-     *
-    */
-    public MrCoxallStack() {
-        this.stackAsList = new ArrayList<>();
-    }
-
-    /**
-     * The getStackAsList() getter.
-     *
-     * @return -  current list
-     */
-    public List<String> getStackAsList() {
-        return this.stackAsList;
-    }
-
-    /**
-     * Pushes the string to a list.
-     *
-     * @param string the string that is going to be pushed
-    */
-    public void push(String string) {
-        this.stackAsList.add(string);
-    }
-
-    /**
-     * Returns the stack value.
-     *
-     * @return the values of the list formatted
->>>>>>> b49eb87def776a148bfccc38c3527cf0a1d36018
     */
     public String showStack() {
         final StringBuilder stackValues = new StringBuilder();
