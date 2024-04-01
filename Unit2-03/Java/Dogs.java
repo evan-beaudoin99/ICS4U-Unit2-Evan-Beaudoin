@@ -42,19 +42,16 @@ final class Dogs {
         dogStack.push("poodle");
         dogStack.push("retriever");
         dogStack.push("beagle");
-        System.out.println("Dog Items: " + dogStack.showStack());
 
-        // Shows the popped item and new list
-        final String topDog;
-        topDog = dogStack.pop();
-        System.out.println("Pop dog item: " + topDog);
+        System.out.println("\nDog Items: " + dogStack.showStack());
+        System.out.println("Popped item: " + dogStack.pop());
         System.out.println("Dog Items: " + dogStack.showStack());
 
         // Check size of stack
-        System.out.println("The size of the stack is: " + dogStack.size());
+        System.out.println("\nThe size of the stack is: " + dogStack.size());
 
         // Check boolean is empty
-        System.out.println("Is the stack empty? " + dogStack.isEmpty());
+        System.out.println("\nIs the stack empty? " + dogStack.isEmpty());
 
         // Show the program as done
         System.out.println("\nDone.");

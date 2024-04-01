@@ -42,19 +42,16 @@ final class Colors {
         colorStack.push("red");
         colorStack.push("green");
         colorStack.push("blue");
-        System.out.println("Color Items: " + colorStack.showStack());
 
-        // Shows the popped item and new list
-        final String topColor;
-        topColor = colorStack.pop();
-        System.out.println("Pop color item: " + topColor);
+        System.out.println("\nColor Items: " + colorStack.showStack());
+        System.out.println("Popped item: " + colorStack.pop());
         System.out.println("Color Items: " + colorStack.showStack());
 
         // Check size of stack
-        System.out.println("The size of the stack is: " + colorStack.size());
+        System.out.println("\nThe size of the stack is: " + colorStack.size());
 
         // Check boolean is empty
-        System.out.println("Is the stack empty? " + colorStack.isEmpty());
+        System.out.println("\nIs the stack empty? " + colorStack.isEmpty());
 
         // Show the program as done
         System.out.println("\nDone.");

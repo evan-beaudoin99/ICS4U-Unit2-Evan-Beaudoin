@@ -42,19 +42,16 @@ final class Fruits {
         fruitStack.push("apple");
         fruitStack.push("banana");
         fruitStack.push("cherry");
-        System.out.println("Fruit Items: " + fruitStack.showStack());
 
-        // Shows the popped item and new list
-        final String topFruit;
-        topFruit = fruitStack.pop();
-        System.out.println("Pop fruit item: " + topFruit);
+        System.out.println("\nFruit Items: " + fruitStack.showStack());
+        System.out.println("Popped fruit item: " + fruitStack.pop());
         System.out.println("Fruit Items: " + fruitStack.showStack());
 
         // Check size of stack
-        System.out.println("The size of the stack is: " + fruitStack.size());
+        System.out.println("\nThe size of the stack is: " + fruitStack.size());
 
         // Check boolean is empty
-        System.out.println("Is the stack empty? " + fruitStack.isEmpty());
+        System.out.println("\nIs the stack empty? " + fruitStack.isEmpty());
 
         // Show the program as done
         System.out.println("\nDone.");

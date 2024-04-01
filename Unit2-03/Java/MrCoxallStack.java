@@ -20,14 +20,14 @@ public class MrCoxallStack {
     */
     private List<String> stackAsList;
 
-     /**
-      * Constructs a new instance of MrCoxallStack.
-      * Initializes the stack with an empty ArrayList.
-      *
-     */
-     public MrCoxallStack() {
-         this.stackAsList = new ArrayList<>();
-     }
+    /**
+     * Constructs a new instance of MrCoxallStack.
+     * Initializes the stack with an empty ArrayList.
+     *
+    */
+    public MrCoxallStack() {
+        this.stackAsList = new ArrayList<>();
+    }
 
     /**
     * Returns the stack value.
@@ -54,14 +54,14 @@ public class MrCoxallStack {
     */
     public boolean isEmpty() {
         boolean empty = false;
-  
+
         if (this.stackAsList.size() == 0) {
             empty = true;
         }
-  
+
         return empty;
     }
-  
+
     /**
      * Checks the size of the array.
      *
@@ -70,7 +70,7 @@ public class MrCoxallStack {
     public int size() {
         return this.stackAsList.size();
     }
-  
+
     /**
      * Pushes the string to a list.
      *
