@@ -6,7 +6,6 @@
 * @since   2024-03-25
 */
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,15 +18,6 @@ public class MrCoxallStack {
      * @param array contains the array of strings
     */
     private List<String> stackAsList;
-
-    /**
-     * Constructs a new instance of MrCoxallStack.
-     * Initializes the stack with an empty ArrayList.
-     *
-    */
-    public MrCoxallStack() {
-        this.stackAsList = new ArrayList<>();
-    }
 
     /**
     * Returns the stack value.
@@ -45,6 +35,16 @@ public class MrCoxallStack {
         stackValues.deleteCharAt(stackValues.length() - 2);
 
         return stackValues.toString();
+    }
+
+    // Getter for stack size
+    public int size() {
+        return stackAsList.size();
+    }
+
+    // Method to check if the stack is empty
+    public boolean isEmpty() {
+        return stackAsList.isEmpty();
     }
 
     /**
