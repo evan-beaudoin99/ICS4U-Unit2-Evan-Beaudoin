@@ -47,17 +47,17 @@ final class Main {
         dogStack.push("beagle");
 
         // Show stack
-        System.out.println("\nFruit Items: " + fruitStack.showStack());
-        System.out.println("Popped fruit: " + fruitStack.popItem());
-        System.out.println("Fruit Items: " + fruitStack.showStack());
+        System.out.println("Fruit Items: " + fruitStack.showStack);
+        System.out.println("Fruit Items: " + fruitStack.popItem());
+        System.out.println("Fruit Items: " + fruitStack.showStack);
+      
+        System.out.println("Color items: " + colorStack.showStack);
+        System.out.println("Color Items: " + colorStack.popItem());
+        System.out.println("Color Items: " + colorStack.showStack);
 
-        System.out.println("\nColor items: " + colorStack.showStack());
-        System.out.println("Popped color: " + colorStack.popItem());
-        System.out.println("Color Items: " + colorStack.showStack());
-
-        System.out.println("\nDog items: " + dogStack.showStack());
-        System.out.println("Popped dog: " + dogStack.popItem());
-        System.out.println("Dog Items: " + dogStack.showStack());
+        System.out.println("Dog items: " + dogStack.showStack);
+        System.out.println("Fruit Items: " + dogStack.popItem());
+        System.out.println("Fruit Items: " + dogStack.showStack);
 
         // Show the program as done
         System.out.println("\nDone.");
