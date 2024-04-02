@@ -11,7 +11,7 @@ export class MrCoxallStack {
   private _stackAsList: string[]
 
   // Creates the stack
-  public constructor() {
+  private constructor() {
     this._stackAsList = []
   }
 
