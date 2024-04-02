@@ -30,4 +30,12 @@ console.log("The size of the stack is: ", dogStack.size)
 // Check boolean is empty
 console.log("Is the stack empty? ", dogStack.isEmpty)
 
+// Peek the last item
+console.log("The top item is: ", dogStack.peekItem())
+console.log("Emptying the stack...")
+dogStack.emptyStack()
+console.log("The size of the stack is: ", dogStack.size)
+console.log("Is the stack empty? ", dogStack.isEmpty)
+
+
 console.log('\nDone.')

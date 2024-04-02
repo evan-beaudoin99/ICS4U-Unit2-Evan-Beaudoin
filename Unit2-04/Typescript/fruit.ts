@@ -30,4 +30,11 @@ console.log("The size of the stack is: ", fruitStack.size)
 // Check boolean is empty
 console.log("Is the stack empty? ", fruitStack.isEmpty)
 
+// Peek the last item
+console.log("The top item is: ", fruitStack.peekItem())
+console.log("Emptying the stack...")
+fruitStack.emptyStack()
+console.log("The size of the stack is: ", fruitStack.size)
+console.log("Is the stack empty? ", fruitStack.isEmpty)
+
 console.log('\nDone.')

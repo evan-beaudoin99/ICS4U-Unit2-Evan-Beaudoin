@@ -59,6 +59,22 @@ export class MrCoxallStack {
       console.log("Array is empty!")
     }
     return returnValue
-  }  
+  } 
+
+  public peekItem() {
+    let returnValue = ""
+
+    if (this._stackAsList.length > 0) {
+      returnValue = this._stackAsList[this._stackAsList.length - 1]
+    }
+    else {
+      console.log("Array is empty")
+    }
+    return returnValue
+  }
+  public emptyStack() {
+    this._stackAsList = ""
+    return this._stackAsList
+  }
 }
 

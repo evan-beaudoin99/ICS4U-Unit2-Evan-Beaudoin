@@ -30,4 +30,11 @@ console.log("The size of the stack is: ", colorStack.size)
 // Check boolean is empty
 console.log("Is the stack empty? ", colorStack.isEmpty)
 
+// Peek the last item
+console.log("The top item is: ", colorStack.peekItem())
+console.log("Emptying the stack...")
+colorStack.emptyStack()
+console.log("The size of the stack is: ", colorStack.size)
+console.log("Is the stack empty? ", colorStack.isEmpty)
+
 console.log('\nDone.')
