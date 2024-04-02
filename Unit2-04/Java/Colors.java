@@ -51,7 +51,14 @@ final class Colors {
         System.out.println("\nThe size of the stack is: " + colorStack.size());
 
         // Check boolean is empty
-        System.out.println("\nIs the stack empty? " + colorStack.isEmpty());
+        System.out.println("Is the stack empty?  " + colorStack.isEmpty());
+
+        // Peek Item
+        System.out.println("\nThe Top Item is: " + colorStack.peekItem());
+        System.out.println("Emptying the stack...");
+        colorStack.emptyStack();
+        System.out.println("The size of the stack is:  " + colorStack.size());
+        System.out.println("Is the stack empty?" + colorStack.isEmpty());
 
         // Show the program as done
         System.out.println("\nDone.");

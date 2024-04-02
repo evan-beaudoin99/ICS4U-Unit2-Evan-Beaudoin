@@ -3,7 +3,7 @@
 *
 * @author  Evan Beaudoin
 * @version 1.0
-* @since   2024-03-25
+* @since   2024-04-01
 */
 
 import java.util.ArrayList;
@@ -89,9 +89,31 @@ public class MrCoxallStack {
     */
     public String pop() {
         if (stackAsList.isEmpty()) {
-            throw new IllegalStateException("Stack is empty.");
+            throw new IllegalStateException("stack is empty.");
         }
 
         return stackAsList.remove(stackAsList.size() - 1);
+    }
+
+    /**
+     * Returns the last stack value.
+     *
+     * @return the last value.
+     *
+     * @throws IllegalStateException if this is ever called
+    */
+    public String peekItem() {
+        if (stackAsList.isEmpty()) {
+            throw new IllegalStateException("Stack is empty.");
+        }
+
+        return stackAsList.get(stackAsList.size() - 1);
+    }
+
+    /**
+     * Clears the stack.
+    */
+    public void emptyStack() {
+        this.stackAsList.clear();
     }
 }
