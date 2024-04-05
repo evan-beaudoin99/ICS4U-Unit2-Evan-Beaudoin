@@ -4,17 +4,43 @@
 * By:      Evan Beaudoin
 * Version: 1.0
 * Since:   2024-04-04
- */
+*/
 
+/**
+ * This is the Vehicle class.
+*/
 public class Vehicle {
 
+    /**
+     * Constants.
+     */
     private int speed;
+
+    /**
+     * Constants.
+     */
     private String color;
+
+    /**
+     * Constants.
+     */
     private String plateNumber;
+
+    /**
+     * Constants.
+     */
     private int numberOfDoors;
+
+    /**
+     * Constants.
+     */
     private int maxSpeed;
 
-    // Creates the Vehicle object
+    /**
+     * Constructs a new instance of Vehicle.
+     * Initializes the stack with an empty ArrayList.
+     *
+    */
     public Vehicle(String color, String plateNumber, int numberOfDoors, int maxSpeed) {
         this.color = color;
         this.plateNumber = plateNumber;
@@ -38,7 +64,9 @@ public class Vehicle {
         this.color = newColor;
     }
 
-    // Method to display the status of the Vehicle
+    /**
+     * Displays the status.
+    */
     public void status() {
         System.out.println("Speed: " + speed);
         System.out.println("Color: " + color);
@@ -47,12 +75,22 @@ public class Vehicle {
         System.out.println("Max Speed: " + maxSpeed);
     }
 
-    // Method to accelerate the Vehicle
+    /**
+     * Accelerates the car. 
+     * 
+     * @param int acceleration power.
+     * @param int acceleration time.
+    */
     public void accelerate(int accelerationPower, int accelerationTime) {
         this.speed = (accelerationPower * accelerationTime) + this.speed;
     }
 
-    // Method to decelerate (brake) the Vehicle
+    /**
+     * Brakes for the car. 
+     * 
+     * @param int break power.
+     * @param int break time.
+    */
     public void brake(int brakePower, int brakeTime) {
         this.speed = this.speed - (brakePower * brakeTime);
     }
