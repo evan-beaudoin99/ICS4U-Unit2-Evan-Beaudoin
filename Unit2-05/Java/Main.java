@@ -18,52 +18,67 @@ final class Main {
     /*
      Constants.
      */
-    final public static int FORDMAXSPEED = 284;
+    public static final int FORDMAXSPEED = 284;
 
     /*
      Constants.
-    */
-    final public static int fordDoors = 4;
+     */
+    public static final int FORD_ACCELERATION = 10;
 
     /*
      Constants.
-    */
-    final public static int ferrariDoors = 2;
+     */
+    public static final int FERRARI_DOORS = 2;
 
     /*
-    Constants.
-    */
-    final public static int ferrariMaxSpeed = 320;
-
-        /*
-    Constants.
-    */
-    final public static int fordDoors = 4;
+     Constants.
+     */
+    public static final int FERRARI_MAX_SPEED = 320;
 
     /*
-    Constants.
-    */
-    final public static int citroenDoors = 2;
+     Constants.
+     */
+    public static final int FERRARI_ACCELERATION = 100;
 
     /*
-    Constants.
-    */
-    final public static int citroenMaxSpeed = 45;
-
-        /*
-    Constants.
-    */
-    final public static int fordDoors = 4;
+     Constants.
+     */
+    public static final int FERRARI_ACCLERATION_TIME = 4;
 
     /*
-    Constants.
-    */
-    final public static int fordDoors = 4;
+     Constants.
+     */
+    public static final int FERRARI_BREAK = 10;
 
     /*
-    Constants.
-    */
-    final public static int fordDoors = 4;
+     Constants.
+     */
+    public static final int CITROEN_DOORS = 2;
+
+    /*
+     Constants.
+     */
+    public static final int CITROEN_MAX_SPEED = 45;
+
+    /*
+     Constants.
+     */
+    public static final int CITROEN_ACCELERATION = 5;
+
+    /*
+     Constants.
+     */
+    public static final int CITROEN_BREAK = 2;
+
+    /*
+     Constants.
+     */
+    public static final int ACCELERATION_TIME = 10;
+
+    /*
+     Constants.
+     */
+    public static final int STATUS = "Status";
     
     /**
     * Prevent instantiation.
@@ -85,13 +100,13 @@ final class Main {
 
     public static void main(String[] args) {
         System.out.println("Created Ford focus");
-        final Vehicle fordFocus = new Vehicle("white", "B40-C4RR0", fordDoors, fordMaxSpeed);
+        final Vehicle fordFocus = new Vehicle("white", "B40-C4RR0", FORD_DOORS, FORDMAXSPEED);
 
-        System.out.println("Status:");
+        System.out.println(STATUS);
         fordFocus.status();
 
         System.out.println("Accelerating, 10 of power for 10 sec.");
-        fordFocus.accelerate(10, 10);
+        fordFocus.accelerate(FORD_ACCELERATION, ACCELERATION_TIME);
         System.out.println("New speed: " + fordFocus.getSpeed());
 
         System.out.println("Changing colour to black:");
@@ -102,17 +117,17 @@ final class Main {
 
         // new Ferrari
         System.out.println("Created a Ferrari");
-        final Vehicle ferrari = new Vehicle("red", "VHD-35HU", 2, 320);
+        final Vehicle ferrari = new Vehicle("red", "VHD-35HU", FERRARI_DOORS, FERRARI_MAX_SPEED);
 
-        System.out.println("Status:");
+        System.out.println(STATUS);
         ferrari.status();
 
         System.out.println("Accelerating, 100 of power for 4 sec.");
-        ferrari.accelerate(100, 4);
+        ferrari.accelerate(FERRARI_ACCELERATION, FERRARI_ACCLERATION_TIME);
         System.out.println("New speed: " + ferrari.getSpeed());
 
         System.out.println("Breaking, 10 of power for 10 sec.");
-        ferrari.brake(10, 10);
+        ferrari.brake(FERRARI_BREAK, ACCELERATION_TIME);
         System.out.println("New speed: " + ferrari.getSpeed());
 
         System.out.println("Changing color:");
@@ -123,17 +138,17 @@ final class Main {
 
         // new Citroen Ami
         System.out.println("Created a Citroen Ami");
-        final Vehicle citroenAmi = new Vehicle("blue", "FS-695-DQ", 2, 45);
+        final Vehicle citroenAmi = new Vehicle("blue", "FS-695-DQ", CITROEN_DOORS, CITROEN_MAX_SPEED);
 
-        System.out.println("Status:");
+        System.out.println(STATUS);
         citroenAmi.status();
 
         System.out.println("Accelerating, 5 of power for 10 sec.");
-        citroenAmi.accelerate(5, 10);
+        citroenAmi.accelerate(CITROEN_ACCELERATION, ACCELERATION_TIME);
         System.out.println("New speed: " + citroenAmi.getSpeed());
 
         System.out.println("Breaking, 2 of power for 10 sec.");
-        citroenAmi.brake(2, 10);
+        citroenAmi.brake(CITROEN_BREAK, ACCELERATION_TIME);
         System.out.println("New speed: " + citroenAmi.getSpeed());
 
         System.out.println("Changing color:");
