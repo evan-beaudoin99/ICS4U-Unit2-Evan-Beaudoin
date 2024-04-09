@@ -80,6 +80,11 @@ final class Main {
     /**
      * Constants.
      */
+    public static final int BREAK_TIME = 10;
+
+    /**
+     * Constants.
+     */
     public static final String NEW_SPEED = "New Speed: ";
 
     /**
@@ -136,7 +141,7 @@ final class Main {
         // new Ferrari
         System.out.println("Created a Ferrari");
         final Vehicle ferrari = new Vehicle("red",
-            +"VHD-35HU", FERRARI_DOORS, FERRARI_MAX_SPEED);
+            "VHD-35HU", FERRARI_DOORS, FERRARI_MAX_SPEED);
 
         System.out.println(STATUS);
         ferrari.status();
@@ -146,7 +151,7 @@ final class Main {
         System.out.println(NEW_SPEED + ferrari.getSpeed());
 
         System.out.println("Breaking, 10 of power for 10 sec.");
-        ferrari.brake(FERRARI_BREAK, ACCELERATION_TIME);
+        ferrari.brake(FERRARI_BREAK, BREAK_TIME);
         System.out.println(NEW_SPEED + ferrari.getSpeed());
 
         System.out.println(CHANGING_COLOR);
@@ -158,7 +163,7 @@ final class Main {
         // new Citroen Ami
         System.out.println("Created a Citroen Ami");
         final Vehicle citroenAmi = new Vehicle("blue",
-            +"FS-695-DQ", CITROEN_DOORS, CITROEN_MAX_SPEED);
+            "FS-695-DQ", CITROEN_DOORS, CITROEN_MAX_SPEED);
 
         System.out.println(STATUS);
         citroenAmi.status();
@@ -168,7 +173,7 @@ final class Main {
         System.out.println(NEW_SPEED + citroenAmi.getSpeed());
 
         System.out.println("Breaking, 2 of power for 10 sec.");
-        citroenAmi.brake(CITROEN_BREAK, ACCELERATION_TIME);
+        citroenAmi.brake(CITROEN_BREAK, BREAK_TIME);
         System.out.println(NEW_SPEED + citroenAmi.getSpeed());
 
         System.out.println(CHANGING_COLOR);
