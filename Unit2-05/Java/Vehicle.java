@@ -68,11 +68,11 @@ public class Vehicle {
      * Displays the status.
     */
     public void status() {
-        System.out.println("Speed: " + speed);
-        System.out.println("Color: " + color);
-        System.out.println("Plate Number: " + plateNumber);
-        System.out.println("Number of Doors: " + numberOfDoors);
-        System.out.println("Max Speed: " + maxSpeed);
+        System.out.println("  --> Speed: " + speed);
+        System.out.println("  --> Max Speed: " + maxSpeed);
+        System.out.println("  --> Number of Doors: " + numberOfDoors);
+        System.out.println("  --> License Plate: " + plateNumber);
+        System.out.println("  --> Color: " + color);
     }
 
     /**
