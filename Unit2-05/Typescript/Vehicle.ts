@@ -36,11 +36,11 @@ export class Vehicle {
     }
 
     public status() {
-        console.log("Speed: " + this._speed)
-        console.log("Color: " + this._color)
-        console.log("plateNumber: " + this._plateNumber)
-        console.log("numberOfDoors: " + this._numberOfDoors)
-        console.log("maxSpeed: " + this._maxSpeed)
+        console.log("  --> Speed: " + this._speed)
+        console.log("  --> Max Speed: " + this._maxSpeed)
+        console.log("  --> Number of doors: " + this._numberOfDoors)
+        console.log("  --> License Plate: " + this._plateNumber)
+        console.log("  --> Color: " + this._color)
     }
 
     public accelerate(accelerationPower: number, accelerationTime: number) {
