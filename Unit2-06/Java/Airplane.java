@@ -1,7 +1,7 @@
 /*
 * This class creates an airplane.
 *
-* @author  Kenny Le
+* @author  Evan Beaudoin
 * @version 1.0
 * @since   2024-04-12
 */
