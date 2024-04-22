@@ -2,7 +2,7 @@
 *
 * This program uses a basic class to make an array of strings
 *
-* By:      Kenny Le
+* By:     Evan Beaudoin
 * Version: 1.0
 * Since:   2024-04-12
 */
