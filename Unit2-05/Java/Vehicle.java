@@ -114,7 +114,7 @@ public class Vehicle {
      * @param newPlateNumber of the vehicle.
     */
     public void setLicensePlateNumber(String newPlateNumber) {
-        this.licensePlateNumber = newPlateNumber;
+        this.plateNumber = newPlateNumber;
     }
 
     /**
