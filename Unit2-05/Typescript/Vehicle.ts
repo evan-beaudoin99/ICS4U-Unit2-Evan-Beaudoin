@@ -23,40 +23,40 @@ export class Vehicle {
         this._speed = 0
     }
 
-     // Gets the license plate number of the vehicle
-  public get licensePlateNumber(): string {
-    return this._plateNumber
-  }
-
-  // Gets the colour of the vehicle
-  public get colour(): string {
-    return this._color
-  }
-
-  // Gets the number of doors on the vehicle
-  public get doors(): number {
-    return this._numberOfDoors
-  }
-
-  // Gets the current speed of the vehicle
-  public get speed(): number {
-    return this._speed
-  }
-
-  // Gets the maximum speed of the vehicle
-  public get maxSpeed(): number {
-    return this._maxSpeed
-  }
-
-    // Sets the colour of the vehicle
-  public set colour(newColor: string) {
-    this._color = newColor
-  }
-
-  // Sets the license plate number of the vehicle
-  public set licensePlateNumber(newPlateNumber: string) {
-    this._plateNumber = newPlateNumber
-  }
+         // Gets the license plate number of the vehicle
+      public get licensePlateNumber(): string {
+        return this._plateNumber
+      }
+    
+      // Gets the colour of the vehicle
+      public get colour(): string {
+        return this._color
+      }
+    
+      // Gets the number of doors on the vehicle
+      public get doors(): number {
+        return this._numberOfDoors
+      }
+    
+      // Gets the current speed of the vehicle
+      public get speed(): number {
+        return this._speed
+      }
+    
+      // Gets the maximum speed of the vehicle
+      public get maxSpeed(): number {
+        return this._maxSpeed
+      }
+    
+        // Sets the colour of the vehicle
+      public set colour(newColor: string) {
+        this._color = newColor
+      }
+    
+      // Sets the license plate number of the vehicle
+      public set licensePlateNumber(newPlateNumber: string) {
+        this._plateNumber = newPlateNumber
+      }
 
     public status() {
         console.log("  --> Speed: " + this._speed)
