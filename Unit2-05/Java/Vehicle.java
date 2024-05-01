@@ -54,31 +54,67 @@ public class Vehicle {
         this.speed = 0;
     }
 
-    /**
-    * Getter for getting the speed.
-    *
-    * @return speed.
+     /**
+     * Gets the license plate number of the vehicle.
+     *
+     * @return the current licensePlateNumber
     */
-    public int getSpeed() {
-        return speed;
+    public String getLicensePlateNumber() {
+        return this.plateNumber;
     }
 
     /**
-    * Getter for getting the color.
-    *
-    * @return color.
+     * Gets the color of the vehicle.
+     *
+     * @return the current color
     */
     public String getColor() {
-        return color;
+        return this.color;
     }
 
     /**
-    * Setter for setting the color.
-    *
-    * @param newColor of the car.
+     * Gets the number of doors on the vehicle.
+     *
+     * @return the number of doors
+    */
+    public int getDoors() {
+        return this.numberOfDoors;
+    }
+
+    /**
+     * Gets the speed of the vehicle.
+     *
+     * @return the current speed
+    */
+    public double getSpeed() {
+        return this.speed;
+    }
+
+    /**
+     * Gets the maximum speed of the vehicle.
+     *
+     * @return the maximum speed
+    */
+    public double getMaxSpeed() {
+        return this.maxSpeed;
+    }
+
+    /**
+     * Sets the color of the vehicle.
+     *
+     * @param newColor of the vehicle
     */
     public void setColor(String newColor) {
         this.color = newColor;
+    }
+
+    /**
+     * Sets the license plate of the vehicle.
+     *
+     * @param newPlateNumber of the vehicle.
+    */
+    public void setLicensePlateNumber(String newPlateNumber) {
+        this.licensePlateNumber = newPlateNumber;
     }
 
     /**
