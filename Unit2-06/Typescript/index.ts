@@ -35,7 +35,7 @@ while (counter < 4) {
     boeing.accelerate()
   }
 
-  counter++; // Increment the counter
+  counter++ // Increment the counter
 }
 
 boeing.setSpeed(424)
