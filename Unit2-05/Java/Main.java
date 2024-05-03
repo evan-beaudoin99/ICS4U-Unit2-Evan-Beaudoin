@@ -130,7 +130,7 @@ final class Main {
 
         System.out.println("Accelerating, 10 of power for 10 sec.");
         fordFocus.accelerate(FORD_ACCELERATION, ACCELERATION_TIME);
-        System.out.println(NEW_SPEED + fordFocus.getSpeed);
+        System.out.println(NEW_SPEED + fordFocus.getSpeed());
 
         System.out.println("Changing colour to black:");
         fordFocus.setColor("black");
