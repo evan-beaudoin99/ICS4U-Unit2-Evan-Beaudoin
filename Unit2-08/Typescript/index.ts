@@ -1,10 +1,10 @@
-/*
-* This program is a vehicle class.
+/**
+* this is the main program
 *
-* @author  Kenny Le
-* @version 1.0
-* @since   2024-04-12
-*/
+* By:      Evan Beaudoin
+* Version: 1.0
+* Since:   2024-05-06
+*/ 
 
 import { Truck } from "./Truck"
 import { Bike } from "./Bike"
