@@ -33,12 +33,8 @@ export class Bike extends Vehicle {
 
   // Creates a string about the status of the car
   public get status() {
-    let statusString = ` -> Speed: ${this.speed}\n`
-    statusString += ` -> MaxSpeed: ${this.maxSpeed}\n`
-    statusString += ` -> Color: ${this.colour}\n`
-    statusString += ` -> Cadence: ${this.cadence}\n`
-    statusString += ` -> Number of Wheels: ${this.wheels}`
-
+    let statusString = super.status + ` \n-> Cadence: ${this.cadence}\n`
+   
     return statusString
   }
 

@@ -33,11 +33,8 @@ export class Truck extends Vehicle {
 
   // Creates a string about the status of the car
   public get status() {
-    let statusString = ` -> Speed: ${this.speed}\n`
-    statusString += ` -> MaxSpeed: ${this.maxSpeed}\n`
-    statusString += ` -> Color: ${this.colour}\n`
-    statusString += ` -> License Plate: ${this.plateNumber}\n`
-    statusString += ` -> Number of Wheels: ${this.wheels}`
+    let statusString = super.status + `\n-> License Plate: 
+    ${this.plateNumber}\n`
 
     return statusString
   }
